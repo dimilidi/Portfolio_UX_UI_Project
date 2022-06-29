@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass  src/scss:src/css --watch "
+  },
+  "author": "",
+  "license": "ISC"
+}
