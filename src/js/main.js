@@ -6,6 +6,10 @@ const navItems = document.querySelectorAll('.menu-nav_item')
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
+// menuBtn.addEventListener('click', setTimeout);
+
+
+
 
 function toggleMenu() {
     if (!showMenu) {
@@ -24,3 +28,9 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+// Optional delay before the typing animation starts
+setTimeout(function() {
+    document.getElementById("typing-letters").classList.add("typing");
+  }, 1000);
+
