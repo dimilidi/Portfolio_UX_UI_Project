@@ -236,12 +236,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  align-items: center;
+  /* gap: 5rem; */
 
 }
 
 .about_top {
   width: 100%;
+  height: 100%;
   
   /* padding: 3rem 0; */
   display: flex;
