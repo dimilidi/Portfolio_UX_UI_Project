@@ -18,32 +18,36 @@
 
         <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav_item ">
-                   <a href="../index.html" class="menu-nav_link">
-                       Home
-                   </a>
+                <li class="menu-nav_item">
+                    <a href="../index.html" class="menu-nav_link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
                 </li>
-                <li class="menu-nav_item  ">
-                   <a href="about.html" class="menu-nav_link">
-                       About Me
+                <li class="menu-nav_item">
+                    <a href="about.html" class="menu-nav_link">
+                        <i class="fas fa-user"></i>
+                        <span>About Me</span>
                    </a>
                 </li>
                 <li class="menu-nav_item active">
                    <a href="projects.html" class="menu-nav_link">
-                       My Projects
+                    <i class="fas fa-suitcase"></i>
+                    <span>My Projects</span>  
                    </a>
                 </li>
                 <li class="menu-nav_item ">
                    <a href="contact.html" class="menu-nav_link">
-                       Contact Me
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Contact Me</span>
                    </a>
                 </li>
             </ul>
         </nav>
-        <div class="languages">
+        <!-- <div class="languages">
             <div>EN</div>
             <div>DE</div>
-        </div>
+        </div> -->
     </header>
     <main>
         <section class="projects">
@@ -68,7 +72,9 @@
               </div>
 
               <div class="project-info">
-                <h3>Jobsy. Jobportal</h3>
+                  <h3>Jobsy. Jobportal</h3>
+                  <p>Jobsy. is a modern, user-friendly job portal that connects job seekers with potential employers. This project was inspired by LinkedIn. It was developed with MERN-Stack as a learning project in a group effort to practice the chat features and the Git workflow with multiple collaborators and branches.</p>
+                 
                 <ul class="project-stack">
                     <li>TypeScript</li>
                     <li>React</li> 
@@ -79,107 +85,196 @@
                     <li>Socket.io</li>
                 </ul>
               </div>
-             
-               
-             <!--
-              <p></p>
-              <p>Jobsy provides several key features to both job seekers and employers.
-                For Not Logged In Users:
-                
-                View advertisements without the need to log in
-                Opportunity to Sign Up
-                For Logged In Users:
-                
-                Access advertisements and view the contact details of the publisher
-                Send messages to the publisher of the advertisements
-                Create and publish own advertisements (searching or offering)
-                Manage a user profile, including the ability to provide contact information (email and/or phone), profession, and a brief description about themselves
-                Edit their profile, including the ability to add a profile photo and update their "about" section
-                Monitor and manage their own advertisements, including the ability to edit and delete them
-                Delete their profile and all associated advertisements</p> -->
             </div>
           
-              
-              <div class="projects_item">
-                  <img src="../images/store.png" alt="My Project">
-                  <div class="projects-btns">
-                      <a href="https://store-and-playroom.netlify.app/" target='_blank' class="projects-btn">
-                          <i class="fa-regular fa-eye"></i>
-                          <span>Preview</span>
-                      </a>
-                      <a href="https://github.com/dimilidi/store" target='_blank'  class="projects-btn">
-                          <i class="fa-brands fa-github"></i>
-                          <span>GitHub</span>
-                      </a>
-                  </div>
-              </div>
-              <div class="projects_item">
-                  <img src="../images/hangman.jpg" alt="My Project">
-                  <div class="projects-btns">
-                      <a href="https://dimilidi.github.io/Hangman/" target='_blank'  class="projects-btn">
-                          <i class="fa-regular fa-eye"></i>
-                          <span>Preview</span>
-                      </a>
-                      <a href="https://github.com/dimilidi/Hangman" target='_blank'  class="projects-btn">
-                          <i class="fa-brands fa-github"></i>
-                          <span>GitHub</span>
-                      </a>
-                  </div>
-              </div>
-              <div class="projects_item">
-                  <img src="../images/quiz3.jpg" alt="My Project">
-                  <div class="projects-btns">
-                      <a href="https://app-quiz-react.netlify.app/" target='_blank'  class="projects-btn">
-                          <i class="fa-regular fa-eye"></i>
-                          <span>Preview</span>
-                      </a>
-                      <a href="https://github.com/dimilidi/quiz" target='_blank'  class="projects-btn">
-                          <i class="fa-brands fa-github"></i>
-                          <span>GitHub</span>
-                      </a>
-                  </div>
-              </div>
-              <div class="projects_item">
-                  <img src="../images/calculator.jpg" alt="My Project">
-                  <div class="projects-btns">
-                      <a href="https://calculate-gadget.netlify.app/" target='_blank'  class="projects-btn">
-                          <i class="fa-regular fa-eye"></i>
-                          <span>Preview</span>
-                      </a>
-                      <a href="https://github.com/dimilidi/calculator" target='_blank' class="projects-btn">
-                          <i class="fa-brands fa-github"></i>
-                          <span>GitHub</span>
-                      </a>
-                  </div>
-              </div>
-              <div class="projects_item">
-                  <img src="../images/tic-tac-toe.png" alt="My Project">
-                  <div class="projects-btns">
-                      <a href="https://fun-game-tic-tac-toe.netlify.app/" target='_blank'  class="projects-btn">
-                          <i class="fa-regular fa-eye"></i>
-                          <span>Preview</span>
-                      </a>
-                      <a href="https://github.com/dimilidi/tic-tac-toe" target='_blank' class="projects-btn">
-                          <i class="fa-brands fa-github"></i>
-                          <span>GitHub</span>
-                      </a>
-                  </div>
-              </div>
+            <div class="projects_item-wrapper">
+                <div class="projects_item">
+                    <img src="../images/store.png" alt="My Project">
+                    <div class="projects-btns">
+                        <a href="https://store-and-playroom.netlify.app/" target='_blank' class="projects-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="https://github.com/dimilidi/store" target='_blank'  class="projects-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>My Store</h3>
+                    <p>This e-shop website with a Gameroom was created with HTML, CSS and React. The main focus of this project is the simulation of the simple online shopping process as well as the design. For this reason not all functionalities were implemented.</p>
+                   
+                  <ul class="project-stack">
+                      <li>HTML</li>
+                      <li>CSS</li> 
+                      <li>React</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="projects_item-wrapper">
+                <div class="projects_item">
+                    <img src="../images/hangman.jpg" alt="My Project">
+                    <div class="projects-btns">
+                        <a href="https://dimilidi.github.io/Hangman/" target='_blank'  class="projects-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="https://github.com/dimilidi/Hangman" target='_blank'  class="projects-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>Hangman Game</h3>
+                    <p>Why not?! The well known hangman as a small browser game. The focus is on object oriented programming with Javascript.</p>
+                   
+                  <ul class="project-stack">
+                      <li>JavaScript</li>
+                      <li>HTML</li> 
+                      <li>CSS</li>
+                  </ul>
+                </div>
+            </div>
+
+            
+            <div class="projects_item-wrapper">
+                <div class="projects_item">
+                    <img src="../images/tattoo_studio.jpg" alt="My Project">
+                    <div class="projects-btns">
+                        <a href="https://dimilidi.github.io/DCI-Final-Project-Tattoo-Studio/index.html" target='_blank'  class="projects-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="https://github.com/dimilidi/DCI-Final-Project-Tattoo-Studio" target='_blank' class="projects-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>Tattoo Studio</h3>
+                    <p>This Website opens the world of art for tattoo fans. The impresive work of the tattoo artists is displayed in categorised galleries according to the styles. For the curious of you there is a brief information section about every style. </p>
+                  <ul class="project-stack">
+                      <li>HTML</li>
+                      <li>SCSS</li>
+                      <li>JavaScript</li> 
+                  </ul>
+                </div>
+                 
+            </div>
+
+            <div class="projects_item-wrapper">
+                <div class="projects_item">
+                    <img src="../images/quiz3.jpg" alt="My Project">
+                    <div class="projects-btns">
+                        <a href="https://app-quiz-react.netlify.app/" target='_blank'  class="projects-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="https://github.com/dimilidi/quiz" target='_blank'  class="projects-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>Quiz</h3>
+                    <p>Let's review some of the main concepts of CSS and HTML with this quiz build with React. Hier I did my first steps with Context.</p>
+                   
+                  <ul class="project-stack">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>React</li> 
+                  </ul>
+                </div>
+            </div>
+
+            <div class="projects_item-wrapper">
+
+                <div class="projects_item">    
+                    <img src="../images/calculator.jpg" alt="My Project">
+                    <div class="projects-btns">
+                        <a href="https://calculate-gadget.netlify.app/" target='_blank'  class="projects-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="https://github.com/dimilidi/calculator" target='_blank' class="projects-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>Calculator</h3>
+                    <p>Calculator - an everyday tool build with React. The main goal was practicing precise definition of components and implementation of Reducer. Enjoy it and try to divide a Number by 0 😜. </p>
+                   
+                  <ul class="project-stack">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>React</li> 
+                      <li>Reducer</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="projects_item-wrapper">
+                <div class="projects_item">
+                    <img src="../images/tic-tac-toe.png" alt="My Project">
+                    <div class="projects-btns">
+                        <a href="https://fun-game-tic-tac-toe.netlify.app/" target='_blank'  class="projects-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span>Preview</span>
+                        </a>
+                        <a href="https://github.com/dimilidi/tic-tac-toe" target='_blank' class="projects-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h3>Tic tac toe</h3>
+                    <p>Some games need a special approach and are always fun. </p>
+                  <ul class="project-stack">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>React</li> 
+                  </ul>
+                </div>
+                 
+            </div>
+
           </div>
 
             <div class="social-icons">
-                <a href="#">
+                <a  onclick="return mail('dimitrovalidia@yahoo.com');" href="mailto:dimitrovalidia@yahoo.com" rel="nofollow">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+
+                </a>
+               
+                <!-- <a href="https://www.facebook.com/lidiya.dimitrova.18/" target="_blank">
                     <i class="fa-brands fa-facebook fa-2x"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-twitter fa-2x"></i>
-                </a>
-                <a href="#">
+                </a> -->
+                <!-- <a href="https://www.instagram.com/dimitrovalidiya/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a> -->
+                <a href="https://github.com/dimilidi" target="_blank">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>   
+                <a href="https://www.linkedin.com/in/dimitrovalidiya/" target="_blank">
                     <i class="fa-brands fa-linkedin fa-2x"></i>
                 </a>
-                <a href="#">
-                    <i class="fa-brands fa-github fa-2x"></i>
-                </a>    
+                <a href="https://www.xing.com/profile/Lidiya_Dimitrova094627/cv" target="_blank">
+                    <i class="fab fa-xing-square fa-2x"></i>
+                </a>
             </div>
         </section>
     </main>

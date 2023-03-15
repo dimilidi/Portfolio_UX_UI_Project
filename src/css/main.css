@@ -12,7 +12,7 @@ header .languages {
 .home {
   height: 100vh;
   margin: 0 auto;
-  padding-top: 30vh;
+  padding-top: 40vh;
   overflow: hidden;
   text-align: center;
   background: linear-gradient(to top,rgba(0,0,0), rgba(0,0,0)) center top;
@@ -31,13 +31,13 @@ header .languages {
 }
 
 #typing {
+  padding: 1rem;
   width: 300px;
   margin: 0 auto;
   text-align: center;
-  font-size: 36px;
   overflow: hidden; /* hides the overflowing text */
   white-space: nowrap; /* prevents wrapping of text */
-  letter-spacing: 0.15em; /* adds space between letters */
+  letter-spacing: 0.15em; 
   animation: typing 2s steps(20, end) forwards ;
 
 }
@@ -113,11 +113,10 @@ footer {
 
 }
 .nav .menu-nav {
-
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.986);
@@ -133,9 +132,13 @@ footer {
   height: 100vh;
 }
 .nav .menu-nav_item {
+  width: 100%;
+  padding: 2rem;
   transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.215);
 }
+
 .nav .menu-nav_item.open {
   transform: translateX(0);
 }
@@ -143,9 +146,9 @@ footer {
   color: rgb(92, 161, 207);
 }
 .nav .menu-nav_link {
-  margin: 20px;
+  margin: 8px;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   /* padding: 2rem 0; */
   font-weight: 300;
@@ -153,6 +156,11 @@ footer {
 }
 .nav .menu-nav_link:hover {
   color: rgb(92, 161, 207);
+}
+
+.menu-nav_link i {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .menu-nav_item:nth-child(1) {
@@ -170,6 +178,9 @@ footer {
 .menu-nav_item:nth-child(4) {
   transition-delay: 0.55s;
 }
+
+
+
 
 
 
@@ -388,19 +399,24 @@ footer {
 
 }
 .projects_items {
-  width: 80%;
-  margin: 2rem auto 0 auto;
+  width: 250px;
+  margin: 2rem auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* display: grid;
   grid-template-columns: 300px; */
   gap: 2rem;
 }
 
 .projects_item-wrapper {
+  padding: 2rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -410,12 +426,16 @@ footer {
   overflow: hidden;
   cursor: pointer;
   width: 300px;
+  height: 200px;
   border-radius: 20px;
 }
+
 .projects_item img {
   width: 100%;
+  min-height: 200px;
   object-fit: cover;
 }
+
 .projects_item::after {
   content: "";
   position: absolute;
@@ -463,12 +483,25 @@ footer {
 .project-info {
   padding: 1rem;
   background-color: #272727;
+  font-size: .6rem;
+  text-align: center;
+
 }
 
 .project-info h3 {
   color:  #5ca1cfb0;
   text-align: center;
+  padding: 1rem;
+
+
   font-weight: 500;
+  font-size: 1rem;
+
+}
+
+.project-info p {
+  font-size: .8rem;
+  line-height: 1.5;
 
 }
 
@@ -491,9 +524,10 @@ footer {
 }
 
 .contact {
+  padding-top: 100px;
+
   height: 100vh;
   width: 100%;
-  /* padding: 20vh 8px 0; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -515,7 +549,7 @@ footer {
   justify-content: center;
   gap: 10; */
   width: 310px;
-  height: 600px;
+  height: 500px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -531,8 +565,8 @@ footer {
 
 .contact-wrapper  .shape:first-child {
   background: linear-gradient(
-    #9b22aa,
-    #bf23f6
+    rgb(205, 86, 165),
+    #5ca1cf
   );
   left: -80px;
   top: -80px;
@@ -542,8 +576,8 @@ footer {
 .contact-wrapper .shape:nth-child(2) {
   background: linear-gradient(
     to right,
-    #ff512f,
-    #f09819
+    #f78f9c,
+    rgb(251, 221, 85)
   );
   right: -30px;
   bottom: -80px;
@@ -565,11 +599,11 @@ footer {
 }
 
 
-.contact-box {
+/* .contact-box {
   height: 100%;
   padding: 4rem 0 0;
   text-align: center
-}
+} */
 
   
       /* background:
@@ -588,7 +622,7 @@ footer {
     color: white;
     letter-spacing: 0.5px;
     outline: none;
-    height: 600px;
+    height: 500px;
     width: 310px;
     margin: 0 auto;
     padding: 2rem;
@@ -632,7 +666,11 @@ input, textarea {
 }
       
 input {
-    height: 3rem;
+    height: 2.5rem;
+}
+
+textarea {
+  height: 150px;
 }
 
 input:focus, textarea:focus {
@@ -657,7 +695,7 @@ button {
   
 button:hover {
   border: 2px solid white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.011);
   color: white;
   cursor: pointer;
   transition: all .5s
@@ -690,9 +728,21 @@ button:hover {
     gap: 35px;
   }
 
+  .projects {
+    width: 100%;
+  }
+
+  .projects_items {
+    width: 70%;
+  }
+
   .form {
     width: 430px;
   }
+
+  input {
+    height: 3rem;
+}
 
   .contact-wrapper {
     width: 430px;
@@ -715,6 +765,10 @@ button:hover {
   .nav .menu-nav {
     align-items: center;
     justify-content: center;
+  }
+
+  .menu-nav_link i {
+    display: none;
   }
 
 
@@ -759,9 +813,14 @@ button:hover {
     text-align: right;
   }
   .nav .menu-nav_item {
+    width: 0;
+    padding: 0;
+    border-bottom: none;
     display: inline;
     padding-left: 1.5rem;
   }
+
+
   .nav .menu-nav_link {
     font-size: 1.2rem;
   }
@@ -785,14 +844,42 @@ button:hover {
   }
 
 
+  .projects_item-wrapper {
+    width: 100%;
 
+  }
 
-  .projects_bio-image {
-    height: 15vh;
+  .projects_item {
+    width: 70%;
+    height: 100%;
+    height: 250px;
+    
   }
-  .projects_items {
-    grid-template-columns: repeat(1, 400px);
+
+  .projects_item img {
+   
+    min-height: 250px;
+   
   }
+
+  .project-info {
+    width: 70%;
+    padding: 1rem;
+    background-color: #272727;
+    font-size: .7rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+}
+
+.project-info h3 {
+  color:  #5ca1cfb0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+
+}
   .projects .text-secondary {
     font-size: 3rem;
   }
@@ -801,6 +888,7 @@ button:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (min-width: 1024px) {
   .home, .contact {
   /* padding-top: 45vh;*/
@@ -838,9 +926,31 @@ button:hover {
     /* height: 70vh;
     margin-top: -70px; */
   }
-  .projects_items {
-    grid-template-columns: repeat(3, 1fr);
+
+
+  .projects_item-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+
   }
+
+  .projects_item {
+    width: 70%;
+    height: 100%;
+    height: 280px;
+    
+  }
+
+  .projects_item img {
+   
+    min-height: 280px;
+   
+  }
+
+
+ 
   .projects .contact-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -854,6 +964,29 @@ button:hover {
   
   .about_bio {
     font-size: 1.5rem;
+  }
+
+  .projects_item-wrapper {
+    width: 1100px;
+
+  }
+
+  .projects_item {
+    width: 70%;
+    height: 100%;
+    height: 300px;
+    
+  }
+
+  .projects_item img {
+   
+    min-height: 300px;
+   
+  }
+
+
+  .projects_info {
+    width: 50%;
   }
 
   .contact-list {

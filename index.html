@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/main.css">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32 (2).ico">
 </head>
 <body>
     <header>
@@ -20,31 +21,36 @@
             <ul class="menu-nav">
                 <li class="menu-nav_item active">
                     <a href="index.html" class="menu-nav_link">
-                        Home
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                      
                     </a>
                 </li>
                 <li class="menu-nav_item ">
                     <a href="src/about.html" class="menu-nav_link">
-                       About Me
+                        <i class="fas fa-user"></i>
+                        <span>About Me</span>
                    </a>
                 </li>
                 <li class="menu-nav_item ">
                    <a href="src/projects.html" class="menu-nav_link">
-                       My Projects
+                    <i class="fas fa-suitcase"></i>
+                    <span>My Projects</span>  
                    </a>
                 </li>
                 <li class="menu-nav_item ">
                    <a href="src/contact.html" class="menu-nav_link">
-                       Contact Me
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Contact Me</span>
                    </a>
                 </li>
             </ul>
         </nav>
 
-        <div class="languages">
+        <!-- <div class="languages">
             <div>EN</div>
             <div>DE</div>
-        </div>
+        </div> -->
     
 
     </header>
@@ -55,21 +61,29 @@
             <h1 class="home-name">
                 Lidiya <span class="home-name_last">Dimitrova</span>
             </h1>
-            <h2 id = 'typing'>Web Developer, Designer & Programmer</h2>
+            <h2 id = 'typing'>Web Developer</h2>
 
             <div class="social-icons">
-                <a href="#">
+                <a  onclick="return mail('dimitrovalidia@yahoo.com');" href="mailto:dimitrovalidia@yahoo.com" rel="nofollow">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+
+                </a>
+               
+                <!-- <a href="https://www.facebook.com/lidiya.dimitrova.18/" target="_blank">
                     <i class="fa-brands fa-facebook fa-2x"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-twitter fa-2x"></i>
-                </a>
-                <a href="#">
+                </a> -->
+                <!-- <a href="https://www.instagram.com/dimitrovalidiya/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a> -->
+                <a href="https://github.com/dimilidi" target="_blank">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>   
+                <a href="https://www.linkedin.com/in/dimitrovalidiya/" target="_blank">
                     <i class="fa-brands fa-linkedin fa-2x"></i>
                 </a>
-                <a href="#">
-                    <i class="fa-brands fa-github fa-2x"></i>
-                </a>    
+                <a href="https://www.xing.com/profile/Lidiya_Dimitrova094627/cv" target="_blank">
+                    <i class="fab fa-xing-square fa-2x"></i>
+                </a>
             </div>
         </section>
     </main>
