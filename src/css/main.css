@@ -59,6 +59,7 @@ header .languages {
   border: 2px solid  #5ca1cf;
   border-radius: 15px;
   font-size: .9rem;
+  font-weight: 500;
   color: rgb(220, 220, 220);
   text-align: center;
 }
@@ -309,7 +310,7 @@ footer {
   line-height: 1.4;
   text-align: center;
   font-size: 1.1rem;
-  text-align: center;
+  font-weight: 300;
 }
 
 .about-sections_heading {
