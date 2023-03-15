@@ -762,8 +762,14 @@ button:hover {
     gap: 3rem;
   }
 
+  .about_top {
+    margin: 0;
+  }
+
+
   .about_top-wrapper {
     gap: 5rem;
+    margin: 0;
   }
 
 
