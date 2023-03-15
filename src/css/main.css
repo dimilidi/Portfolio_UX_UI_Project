@@ -11,8 +11,9 @@ header .languages {
 
 .home {
   height: 100vh;
-  margin: 0 auto;
-  padding-top: 40vh;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-top: 35vh;
   overflow: hidden;
   text-align: center;
   background: linear-gradient(to top,rgba(0,0,0), rgba(0,0,0)) center top;
@@ -20,7 +21,7 @@ header .languages {
 }
 
 .home-name {
-  font-size: 4rem;
+  font-size: 3.5rem;
   padding: 0.4rem;
   margin: 1rem 0;
   border-bottom: 4px solid white;
@@ -38,8 +39,33 @@ header .languages {
   overflow: hidden; /* hides the overflowing text */
   white-space: nowrap; /* prevents wrapping of text */
   letter-spacing: 0.15em; 
-  animation: typing 2s steps(20, end) forwards ;
+  animation: typing 3s steps(20, end) forwards ;
 
+}
+
+.cv-wrapper {
+  /* margin-top: 2rem ; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cv {
+  padding: 1rem;
+  width: 150px;
+  border: 2px solid  #5ca1cf;
+  border-radius: 15px;
+  font-size: .9rem;
+  color: rgb(220, 220, 220);
+  text-align: center;
+}
+
+.cv:hover {
+  color: #5ca1cf;
+  opacity: .7;
 }
 
 
@@ -194,7 +220,7 @@ footer {
 .about {
   height: 100%;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,16 +228,26 @@ footer {
   background: linear-gradient(to top,rgba(39, 39, 39, 0.1), rgba(0,0,0)) center top;
 }
 
+.about_top-wrapper {
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+
+}
+
 .about_top {
   width: 100%;
-  height: 60vh;
+  
   /* padding: 3rem 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  border-radius: 20px;
   background-size: cover;
   background-color: black;
 }
@@ -226,6 +262,8 @@ footer {
 
 .about_top h3 {
   font-size: 1.6rem;
+  letter-spacing: .1rem;
+
 }
 
 .about_top .helpful{
@@ -266,7 +304,7 @@ footer {
 }
 .about_bio {
   width: 65vw;
-  margin: 4rem 0;
+  margin: 8rem 0;
   padding: 0 5px;
   line-height: 1.4;
   text-align: center;
@@ -288,7 +326,7 @@ footer {
 }
 .about .jobs {
   width: 100%;
-  padding: 4rem;
+  padding: 8rem 0 ;
   background: black;
 }
 
@@ -425,7 +463,8 @@ footer {
   border-bottom: 5px solid rgb(92, 161, 207);
   overflow: hidden;
   cursor: pointer;
-  width: 300px;
+  width: 250px;
+  max-width: 500px;
   height: 200px;
   border-radius: 20px;
 }
@@ -485,22 +524,19 @@ footer {
   background-color: #272727;
   font-size: .6rem;
   text-align: center;
-
 }
 
 .project-info h3 {
   color:  #5ca1cfb0;
   text-align: center;
   padding: 1rem;
-
-
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 
 }
 
 .project-info p {
-  font-size: .8rem;
+  font-size: .9rem;
   line-height: 1.5;
 
 }
@@ -519,8 +555,7 @@ footer {
   /* background-color: black; */
   border-radius: 5px;
   border: 1px solid #5ca1cf;
-
-
+  font-size: .7rem;
 }
 
 .contact {
@@ -718,10 +753,16 @@ button:hover {
     padding-top: 35vh;
   }
 
-  .about_top {
-    padding: 7rem 0;
-    flex-direction: row;
+  .home-name {
+    font-size: 4rem;
   }
+
+  .cv-wrapper {
+    padding-top: .5rem;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
 
   .about .jobs-grid {
     grid-template-columns: repeat(3,200px);
@@ -735,6 +776,11 @@ button:hover {
   .projects_items {
     width: 70%;
   }
+
+  .projects_item {
+    width: 300px;
+  }
+
 
   .form {
     width: 430px;
@@ -839,9 +885,18 @@ button:hover {
 
   }
 
+  .about_top-wrapper {
+    height: 85vh;
+  }
+
+  .about_top {
+    flex-direction: row;
+  }
+
   .about_top h3 {
     font-size: 2rem;
   }
+
 
 
   .projects_item-wrapper {
@@ -878,8 +933,12 @@ button:hover {
   text-align: center;
   font-weight: 500;
   font-size: 1.5rem;
-
 }
+
+.project-stack li {
+  font-size: 1rem;
+}
+
   .projects .text-secondary {
     font-size: 3rem;
   }
@@ -967,7 +1026,7 @@ button:hover {
   }
 
   .projects_item-wrapper {
-    width: 1100px;
+    width: 100%;
 
   }
 
@@ -987,6 +1046,14 @@ button:hover {
 
   .projects_info {
     width: 50%;
+  }
+
+  .project-info h3{
+    font-size: 1.8rem;
+  }
+
+  .project-info p{
+    font-size: 1.2rem;
   }
 
   .contact-list {
