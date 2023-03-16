@@ -1,18 +1,17 @@
+/* CSS Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header .languages {
-   display: none; 
-  /* visibility: hidden; */
-}
+
+/* Home */
 
 .home {
   height: 100vh;
   width: 100%;
-  /* margin: 0 auto; */
   padding-top: 25vh;
   overflow: hidden;
   text-align: center;
@@ -40,11 +39,9 @@ header .languages {
   white-space: nowrap; /* prevents wrapping of text */
   letter-spacing: 0.15em; 
   animation: typing 3s steps(20, end) forwards ;
-
 }
 
 .cv-wrapper {
-  /* margin-top: 2rem ; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -131,9 +128,7 @@ footer {
 .nav {
   width: 100%;
   opacity: 0.98;
-  /* display: none; */
   visibility: hidden;
-  /* background-color: black; */
 }
 .nav.open {
   visibility: visible;
@@ -148,7 +143,6 @@ footer {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.986);
   list-style: none;
-  /* padding-right: 1rem; */
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
   z-index: 5;
@@ -177,7 +171,6 @@ footer {
   display: inline-block;
   font-size: 1.2rem;
   text-transform: uppercase;
-  /* padding: 2rem 0; */
   font-weight: 300;
   transition: all 0.5s ease-in-out;
 }
@@ -207,16 +200,13 @@ footer {
 }
 
 
-
-
-
-
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
 
+/* About */
 
 .about {
   height: 100%;
@@ -263,16 +253,13 @@ footer {
 .about_top h3 {
   font-size: 1.6rem;
   letter-spacing: .1rem;
-
 }
 
 .about_top .helpful{
   color: rgb(251, 221, 85);
-  /* color: rgb(231, 221, 112); */
 }
 
 .about_top .curious{
-  /* color: rgb(248, 123, 112); */
   color: #f78f9c;
 }
 
@@ -304,7 +291,7 @@ footer {
 }
 .about_bio {
   width: 100vw;
-  margin: 8rem 0;
+  margin: 2rem 0;
   padding: 4rem;
   line-height: 1.4;
   text-align: center;
@@ -320,14 +307,13 @@ footer {
   text-align: center;
 }
 
-
 .text-secondary {
   padding-bottom: 1rem;
   text-align: center;
 }
 .about .jobs {
   width: 100%;
-  padding: 8rem 0 ;
+  padding: 4rem 0;
   background: black;
 }
 
@@ -365,7 +351,6 @@ footer {
  transform-style: preserve-3d;
 }
 
-
 .about .social-icons {
   display: flex;
   flex-direction: column;
@@ -387,7 +372,6 @@ footer {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
-
 
 .icon-container,
 .back {
@@ -411,6 +395,7 @@ footer {
 }
 
 
+/* Projects */
 
 .projects {
   padding: 80px 0;
@@ -428,8 +413,8 @@ footer {
 
 .projects_bio-image .text-secondary {
   font-size: 2rem;
-
 }
+
 .projects_items {
   width: 250px;
   margin: 2rem auto;
@@ -437,8 +422,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* display: grid;
-  grid-template-columns: 300px; */
   gap: 2rem;
 }
 
@@ -452,7 +435,6 @@ footer {
   justify-content: center;
   border-radius: 5px;
 }
-
 
 .projects_item {
   position: relative;
@@ -559,11 +541,13 @@ footer {
   margin: 5px;
   padding: .5rem;
   color: rgb(220, 220, 220);
-  /* background-color: black; */
   border-radius: 5px;
   border: 1px solid #5ca1cf;
   font-size: .7rem;
 }
+
+
+/* Contact */
 
 .contact {
   height: 100%;
@@ -574,10 +558,10 @@ footer {
   justify-content: flex-end;
   background:rgb(0, 0, 0);
 }
+
 .contact h2 {
   font-size: 3rem;
   margin-bottom: 4rem;
- 
 }
 
 .contact-wrapper {
@@ -606,7 +590,6 @@ footer {
   top: -80px;
 }
 
-
 .contact-wrapper .shape:nth-child(2) {
   background: linear-gradient(
     to right,
@@ -625,33 +608,8 @@ footer {
   text-align: center;
   gap: 2rem;
   font-size: 1.2rem;
-  /* filter: drop-shadow(8px); */
-
-  /* background-color: rgba(255, 255, 255, 0.258);*/
-  /* backdrop-filter: blur(5px) ; */
-  /* border-radius: 25px;
-  box-shadow: 0 0 5px 0; */
 }
 
-
-/* .contact-box {
-  height: 100%;
-  padding: 4rem 0 0;
-  text-align: center
-} */
-
-  
-      /* background:
-      linear-gradient(
-          to right,
-          rgba($primary-color, 0.3),
-          rgba($primary-color, 0.9)
-      ), 
-      url('../../images/bg1.jpg') center center;
-      background-size: cover;
-      border-bottom: 1px solid $lila;*/
-
-  
 
 .form {
     color: white;
@@ -661,7 +619,6 @@ footer {
     width: 310px;
     margin: 0 auto;
     padding: 2rem;
-    /* background-color: rgba(0, 0, 0, 0.7); */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -676,7 +633,6 @@ footer {
   label {
     font-size: 16px;
     font-weight: 500px;
-
   }
 
 .form input, textarea, button {
@@ -693,19 +649,15 @@ footer {
     font-size: 32px;
     font-weight: 500px;
     line-height: 42px;
-
 }
 
-/* Change the white to any color */
-
+/* Change the white background of input fields by browser autocomplete to any color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
-
-
 
 input, textarea {
   color: white;
@@ -725,8 +677,6 @@ input:focus, textarea:focus {
     outline: 1px solid  rgba(255, 255, 255, 0.447);
     border: none;
 }
-
-
 
 ::placeholder {
     padding-left: 0.5rem;  
@@ -752,8 +702,6 @@ button:hover {
   transition: all .5s
 }
       
- 
-
 .contact .social-icons {
   flex-direction: row;
   text-align: center;
@@ -764,6 +712,8 @@ button:hover {
 }
 
 
+
+/*MEDIA QUERIES*/
 
 @media screen and (min-width: 520px) {
 
@@ -785,7 +735,6 @@ button:hover {
     margin: 0;
   }
 
-
   .about_top-wrapper {
     gap: 5rem;
     margin: 0;
@@ -794,7 +743,6 @@ button:hover {
   .about_bio {
     padding: 4rem 6rem;
   }
-
 
   .about .jobs-grid {
     grid-template-columns: repeat(3,200px);
@@ -825,7 +773,6 @@ button:hover {
     margin: 1rem;
     min-width: 220px;
     max-width: 400px;
-   
   }
 
   .project-info {
@@ -840,7 +787,7 @@ button:hover {
 
   input {
     height: 3rem;
-}
+  }
 
   .contact-wrapper {
     width: 430px;
@@ -849,9 +796,8 @@ button:hover {
   .footer-contact {
     transform: none;
   }
-
- 
 }
+
 
 @media screen and (min-width: 768px) {
   header {
@@ -868,29 +814,6 @@ button:hover {
   .menu-nav_link i {
     display: none;
   }
-
-
-   .languages {
-    display: block !important;
-    /* visibility: visible; */
-    margin-left: 0rem;
-    font-size: .7rem;
-  }
-
-  .languages div {
-    padding: 5px;
-  }
-
- .languages  div:first-of-type {
-    color: pink;
-  }
-
-  .languages  div:nth-last-of-type(1) {
-    color: rgb(92, 161, 207);
-  }
-
-
- 
 
   .menu-btn {
     display: none;
@@ -918,7 +841,6 @@ button:hover {
     padding-left: 1.5rem;
   }
 
-
   .nav .menu-nav_link {
     font-size: 1.2rem;
   }
@@ -930,7 +852,6 @@ button:hover {
   .footer-horizontal {
     transform: none;
   }
-
 
   .about-sections_heading {
     font-size: 2rem;
@@ -951,7 +872,6 @@ button:hover {
 
   .projects_item-wrapper {
     width: 100%;
-
   }
 
   .projects_item {
@@ -962,9 +882,7 @@ button:hover {
   }
 
   .projects_item img {
-   
     min-height: 250px;
-   
   }
 
   .project-info {
@@ -1002,25 +920,12 @@ button:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .home, .contact {
-  /* padding-top: 45vh;*/
-  }
-
-  .about_bio-image {
-
-    /* height: 50vh; */
-  }
-
   .about_bio {
     font-size: 1.3rem;
   }
 
   .about_top {
     flex-direction: row;
-  }
-
-  .about_top h3 {
-    /* font-size: 2.0rem; */
   }
 
   .about_top-headings {
@@ -1031,35 +936,23 @@ button:hover {
     height: 100vh;
   }
 
-
-  
-
-  .projects_bio-image {
-    /* height: 70vh;
-    margin-top: -70px; */
-  }
-
-
   .projects_item-wrapper {
     flex-direction: row;
     justify-content: space-around;
     gap: 2rem;
     width: 100%;
     padding: 5rem 2rem;
-
   }
 
   .projects_item {
     min-width: 300px;
     max-width: 500px;
     height: 300px;
-    
   }
 
   .projects_item img {
     min-height: 300px;
   }
-
  
   .projects .contact-list {
     grid-template-columns: repeat(2, 1fr);
@@ -1085,13 +978,11 @@ button:hover {
   .projects_item {
     min-width: 550px;
     height: 340px;
-    
   }
 
   .projects_item img {
     min-height: 340px;
   }
-
 
   .projects_info {
     width: 40%;
@@ -1109,18 +1000,17 @@ button:hover {
     font-size: 1rem;
   }
 
-
-
   .contact-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+
+/* Common */
+
 body {
   background: black;
-  /* background: linear-gradient(to top, rgb(22, 21, 21,0.3), rgb(0, 0, 0));; */
   color: white;
-  /* height: 100vh; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
@@ -1145,13 +1035,8 @@ ul li {
 
 header {
   position: fixed;
-  /* z-index: 2; */
-  /* padding: 1rem;  */
   width: 100%;
   height: 80px; 
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
   background-color: black;
   z-index: 6;
 }
@@ -1163,8 +1048,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-
-
 
 .logo img { 
 height: 37px;
