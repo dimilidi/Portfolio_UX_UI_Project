@@ -870,6 +870,10 @@ button:hover {
     font-size: 2rem;
   }
 
+  .about_bio p {
+    padding: 0 4rem;
+  }
+
   .projects_item-wrapper {
     width: 100%;
   }
@@ -878,7 +882,6 @@ button:hover {
     width: 100%;
     height: 100%;
     height: 250px;
-    
   }
 
   .projects_item img {
@@ -922,6 +925,10 @@ button:hover {
 @media screen and (min-width: 1024px) {
   .about_bio {
     font-size: 1.3rem;
+  }
+
+  .about_bio p {
+    padding: 0 8rem;
   }
 
   .about_top {
@@ -969,11 +976,14 @@ button:hover {
     font-size: 1.5rem;
   }
 
+  .about_bio p {
+    padding: 0 14rem;
+  }
+
   .projects_item-wrapper {
     width: 100%;
     padding: 5rem;
   }
-
 
   .projects_item {
     min-width: 550px;
@@ -1057,15 +1067,18 @@ height: 37px;
 main {
   width: 100%;
 }
+
 main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
 }
+
 main .social-icons a {
   padding: 0.4rem;
   transition: all 0.5s ease-in-out;
 }
+
 main .social-icons a:hover {
   color: rgb(92, 161, 207);
 }

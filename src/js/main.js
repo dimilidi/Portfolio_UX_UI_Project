@@ -32,3 +32,5 @@ setTimeout(function() {
     document.getElementById("typing-letters").classList.add("typing");
   }, 1000);
 
+
+ 
