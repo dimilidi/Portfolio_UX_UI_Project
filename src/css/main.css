@@ -749,7 +749,7 @@ button:hover {
 
 .contact .social-icons {
   flex-direction: row;
-  position: initial;
+  position: absolute;
   margin-top: 2rem;
   padding: 1rem 2rem;
   z-index: 7;
