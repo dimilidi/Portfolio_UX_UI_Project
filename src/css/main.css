@@ -303,13 +303,14 @@ footer {
   padding: 1rem 0 ;
 }
 .about_bio {
-  width: 65vw;
+  width: 100vw;
   margin: 8rem 0;
-  padding: 0 5px;
+  padding: 4rem;
   line-height: 1.4;
   text-align: center;
   font-size: 1.1rem;
   font-weight: 300;
+  background-color: #272727;
 }
 
 .about-sections_heading {
@@ -334,6 +335,7 @@ footer {
   border-radius: 5px;
   margin: 6px 0;
 }
+
 .about .jobs .icon-container {
   width: 100%;
   height: 100%;
@@ -343,9 +345,6 @@ footer {
   transition: transform 1s;
   transform-style: preserve-3d;
 }
-
-
-
 
 .about .jobs-grid {
   width: 60vw;
@@ -366,8 +365,6 @@ footer {
  position: absolute;
  transition: transform 1s;
  transform-style: preserve-3d;
-
- 
 }
 
 
@@ -760,7 +757,7 @@ button:hover {
 
 @media screen and (min-width: 520px) {
 
-  .home{
+  .home {
     padding-top: 35vh;
   }
 
@@ -782,6 +779,10 @@ button:hover {
   .about_top-wrapper {
     gap: 5rem;
     margin: 0;
+  }
+
+  .about_bio {
+    padding: 4rem 6rem;
   }
 
 
