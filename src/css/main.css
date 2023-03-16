@@ -577,7 +577,6 @@ footer {
   margin-top: 30px;
   width: 310px;
   height: 500px;
-  overflow-y: hidden;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -607,7 +606,7 @@ footer {
     #f78f9c,
     rgb(251, 221, 85)
   );
-  right: -35px;
+  right: -30px;
   bottom: -80px;
 }
 
@@ -753,6 +752,7 @@ button:hover {
   position: initial;
   margin-top: 2rem;
   padding: 1rem 2rem;
+  z-index: 7;
 }
 
 
