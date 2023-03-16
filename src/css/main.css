@@ -310,7 +310,7 @@ footer {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 300;
-  background-color: #272727;
+  background-color: #2727277e;
 }
 
 .about-sections_heading {
@@ -351,8 +351,6 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
- 
-  /* flex-direction: column; */
   gap: 2rem;
 }
 
